@@ -12,6 +12,6 @@ queue.append(100)  # 9
 queue.append(101)  # 10
 queue.append(102)  # 11
 queue.append(103)  # 12
-queue.pop(int(input("Enter that you want which you are popped?")))
+queue.pop(int(input("Enter that you want which you are popped?\n")))
 # Pop means to omit, so the number of pop is omitted.
 print(queue)
