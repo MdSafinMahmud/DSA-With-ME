@@ -21,7 +21,7 @@ void pop()
 {
     if (top == -1)
     {
-        print("Stack is underflow!!");
+        printf("Stack is underflow!!");
     }
     else
     {
@@ -33,7 +33,7 @@ void pop()
 void peek()
 {
     if (top == -1)
-        printf("Stack is empty!\n", );
+        printf("Stack is empty!\n");
     else
     {
         printf("Top element is : %d\n", stack[top]);
@@ -56,10 +56,10 @@ void display()
 }
 int main()
 {
-    int choice;
+    int choice, value;
     while (1)
     {
-        printf("\nStack Menu.");
+        printf("\nStack Menu.\n");
         printf("1.PUSH\n");
         printf("2.POP\n");
         printf("3.PEEK\n");
@@ -67,10 +67,27 @@ int main()
         printf("5.EXIT\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-        switch(chocie)
+        switch (choice)
         {
-            case 1:
-            printf("Enter")
+        case 1:
+            printf("Enter value to push:\n");
+            scanf("%d", &value);
+            push(value);
+            break;
+        case 2:
+            pop();
+            break;
+        case 3:
+            peek();
+            break;
+        case 4:
+            display();
+            break;
+        case 5:
+            printf("Program Terminated.\n");
+            return 0;
+        default:
+            printf("Invalid! please enter a number!!");
         }
     }
     return 0;
