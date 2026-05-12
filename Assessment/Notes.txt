@@ -1,0 +1,66 @@
+Assessment 1:
+
+
+Assessment 2: 			
+				==Explain part by part==
+
+In this code, a Queue (FIFO First In First Out) has been created using Python's deque.
+
+1st: from collections import deque
+Here deque is imported from Python's collections module.
+deque Means Double Ended Queue.This makes queue operations very fast.
+
+2nd: queue = deque()
+An empty queue has been created here.
+its blank like: queue = [] (its similarly an array)
+
+Function creation:
+def operation(choice):
+Here a function called operation() has been created. 
+It will work differently according to the choice.
+
+match-case:
+match choice:
+It works like a switch-case. 
+Meaning: 
+1)if choice = 1 then case 1 will run, 
+2)if choice = 2 then case 2 will run, 
+like this...
+
+case 1
+case 1:
+    queue.append(1)
+    queue.append(2)
+Inserting 1 and 2 into the Queue
+append() 
+adds a value to the end of the Queue.
+
+print("Enqueued 2 values:", list(queue))
+Printing the deque as a list.
+
+case 2
+case 2:
+This is a dequeue operation.
+
+if queue:
+Checking if the Queue is empty.
+In Python, if it is empty, it returns False.
+
+removed = queue.popleft()
+popleft() removes the first element of the queue. 
+Queue follows FIFO
+
+case 3
+queue.extend([3, 4, 5, 6])
+Adding multiple values ​​together
+
+case 4
+for _ in range(2):
+Loop will run 2 times.
+Every time:
+removed = queue.popleft()
+Will remove from front.
+and then function call... 
+run this code in your terminal to see outputs!
+
+Assessment 3:
