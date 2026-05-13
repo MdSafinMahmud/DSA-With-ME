@@ -25,5 +25,5 @@ int main()
         }
     }
     printf("Element not found\n");
-    return 0;
+    return ;
 }
