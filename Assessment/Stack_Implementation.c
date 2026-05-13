@@ -59,7 +59,7 @@ int main()
     int choice, value;
     while (1)
     {
-        printf("\nStack Menu.\n");
+        printf("Stack Menu.\n");
         printf("1.PUSH\n");
         printf("2.POP\n");
         printf("3.PEEK\n");
