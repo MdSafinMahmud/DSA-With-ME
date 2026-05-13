@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main()
 {
-    int arr[] = { 10, 20, 30, 40,50};
+    int arr[] = {5, 10, 15, 20, 25, 30, 35};
     int size = 7;
-    int search = 40;
+    int search = 25;
     int low = 0;
     int high = size - 1;
     int mid;
