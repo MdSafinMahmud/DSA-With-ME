@@ -1,40 +1,46 @@
 #include <stdio.h>
-
+#define MAX 5
 int main()
 {
-    int arr[] = {2, 4, 6, 8, 10};
-    int itm = 2;
-    int n = 5;
-    int i, j;
-    int fnd = 0;
-    printf("array:\n");
+    int n;
+    int item = 2;
+    int i;
+    int found = 0;
+    printf("Enter array size: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter %d elements:\n", n);
     for (i = 0; i < n; i++)
     {
-        printf("array[%d]=%d\n", i, arr[i]);
+        scanf("%d", &arr[i]);
     }
+    printf("\nArray Elements:\n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("arr[%d] = %d\n", i, arr[i]);
+    }
+    int item2;
+    printf("Enter item to search: ");
+    scanf("%d", &item);
+    int found2 = 0;
+    int j = 0;
     while (j < n)
     {
-        if (arr[j] == itm)
+        if (arr[j] == item)
         {
-            fnd = 1;
+            found = 1;
             break;
         }
         j++;
     }
-    if (fnd == 1)
+    if (found)
     {
-        printf("Found element %d at position %d\n", itm, j + 1);
+        printf("Found element at position %d.", item, j+1 );
     }
     else
     {
-        printf("Element %d are not found in the array.", itm);
+        printf("Elment are not found");
     }
     return 0;
 }
-
-// 1. Start
-// 2. Set J = 0
-// 3. Repeat steps 4 and 5 while J < N 4. IF LA[J] is equal ITEM THEN GOTO STEP 6
-// 5. Set J = J + 1
-// 6. PRINT J, ITEM
-// 7. Stop
