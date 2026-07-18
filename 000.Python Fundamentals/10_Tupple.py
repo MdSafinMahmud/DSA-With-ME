@@ -1,0 +1,6 @@
+a = (1, 1, 1, 1, 1, 1, 2, 7, 2)
+print(a)
+a.count(1)
+print(a.count(1))
+a.index(1)
+print(a.index(1))
