@@ -1,1 +1,0 @@
-like ami eikhane ja likhtasi auto oikhane jaibe 
