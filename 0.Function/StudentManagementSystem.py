@@ -121,7 +121,7 @@ def show_passed_students():
     for student in students:
         average = calculate_average(student(["marks"]))
         if average >= 40:
-            print(student["name"], "-", round(average, 2))
+            print(student["name"], "-", round(average))
             found = True
         if found == False:
             print("No passed students.")
