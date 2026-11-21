@@ -9,5 +9,3 @@ elif c>a and c>b:
     print("Third number is greater than others numbers.")
 else:
     print("PLZ enter number.")
-    
-    
